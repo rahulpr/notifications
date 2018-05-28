@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+    <base href="http://192.168.1.247/notification/examples/chat/public/assets/" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<ul class="pages">
+    <li>
+        <div id="after-logged">
+            <ul class="header">
+                <li><span id="client-name">Admin Panel</span></li>
+            </ul>
+        </div>
+    </li>
+    <li class="chat active">
+        <!--<div class="clients">-->
+            <!--<h5 class="client-hd"><u>Clients (<span id="count"></span>)</u></h5>-->
+            <!--<ul id="client-list"></ul>-->
+        <!--</div>-->
+    </li>
+    <li class="chat page admin" style="display: block;">
+        <div class="chatArea admin">
+            <ul class="messages"></ul>
+        </div>
+        <input class="inputMessage admin" placeholder="Type here..."/>
+    </li>
+</ul>
+
+<div class="clients">
+    <div class="client-hd">Clients (<span id="count"></span>)</div>
+    <ul id="client-list"></ul>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/socket.io-client/socket.io.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Client</title>
+    <base href="http://192.168.1.247/notification/examples/chat/public/assets/"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="notifications-count">0</div>
+<ul class="notifications"></ul>
+
+<ul class="pages">
+    <li class="chat page">
+        <div id="after-logged">
+            <ul class="header">
+                <li><span id="client-name"></span></li>
+                <li><a href="javascript:void(0)" id="logout">Logout</a></li>
+            </ul>
+        </div>
+        <div class="chatArea">
+            <ul class="messages"></ul>
+        </div>
+        <input class="inputMessage" placeholder="Type here..."/>
+    </li>
+    <li class="login page">
+        <div class="form">
+            <h3 class="title">What's your nickname?</h3>
+            <input class="usernameInput" type="text" maxlength="14"/>
+        </div>
+    </li>
+</ul>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/socket.io-client/socket.io.js"></script>
+<script src="js/client.js"></script>
+</body>
+</html>
